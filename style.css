@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+.navbar{
+    background-color: #1f2937;
+    color: white;
+}
+.container{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.navbar .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+
+}
+.nav ul li a:hover{
+    font-size: 1.25rem;
+}
+.header{
+    background-color: #1f2937;
+    color: white;
+
+}
+.header .container > *{
+    max-height: 475px;
+}
+.header .container .text{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 50px;
+    gap: 10px;
+}
+
+.text h1{
+    font-size: 48px;
+    line-height: 1.1;
+}
+.text p{
+    font-size: 18px;
+}
+.text a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(87, 87, 253);
+    width: 140px;
+    height: 35px;
+    transition: font-size 0.3s ease, width 0.3s ease, height 0.3s ease; /* Add width and height to the transition */
+  }
+  
+  .text a:hover {
+    font-size: 1.5rem; /* Increase font size on hover */
+    width: 155px; /* Increase width on hover */
+    height: 45px; /* Increase height on hover */
+  }
+
+
+.header .container img{
+    flex: 1.5;
+}
+section .container{
+    flex-direction: column;
+}
+
+.container .top {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-height: 1100px;
+    padding:75px 0;
+    gap: 60px ;
+}
+.top h1{
+    font-size: 2rem;
+}
+.boxes{
+    display: flex;
+    gap: 40px;
+    padding: 0 30px;
+}
+.boxes > *{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 200px;
+}
+/* Selecting all img elements within divs whose class starts with "box-" */
+.boxes [class^="box-"] img {
+    height: 200px;
+    border-radius: 20px;
+    border: 5px solid rgb(100, 100, 202);
+
+}
+.boxes [class^="box-"] p{
+    font-size: 1.15rem;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+.middle p{
+    font-size: 2rem;
+    font-style: italic;
+}
+.yep{
+    font-size: 20px;
+    margin-left: auto;
+}
+.division1{
+    background-color: #e5e7eb;
+}
+.division2{
+    display: flex;
+    height: 250px;
+    align-items: center;
+}
+.bottom{
+    display:flex;
+    width: 750px;
+    justify-content: space-around;
+    height: 125px;
+    background-color: rgb(36, 48, 153) ;
+    border-radius: 15px;
+}
+.bottom > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    color: white;
+}
+.left-side h2{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+.right-side a {
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    transition: font-size 0.3s ease, width 0.3s ease, height 0.3s ease; /* Add width and height to the transition */
+}
+.right-side a:hover{
+    font-size: 1.5rem; /* Increase font size on hover */
+    width: 155px; /* Increase width on hover */
+    height: 45px; /* Increase height on hover */
+}
+.footer{
+    background-color: grey;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
